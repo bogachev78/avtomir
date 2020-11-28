@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+  {{service.title}}
+{% endblock title %}
+{% block content %}
+
+  <div class="site-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 blog-content">
+            <h2>{{service.title}}</h2>
+            <div>{% autoescape off %}{{service.body}}{% endautoescape %}</div>
+            <p class="date">{{service.created}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}

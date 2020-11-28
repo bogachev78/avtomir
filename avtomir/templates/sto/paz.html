@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+  {{paz.title}}
+{% endblock title %}
+{% block content %}
+
+  <div class="site-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 blog-content">
+            <h2>{{paz.title}}</h2>
+            <div>{% autoescape off %}{{paz.body}}{% endautoescape %}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}

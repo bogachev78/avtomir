@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}
+  List Products
+{% endblock title %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h4>Каталог запчастей</h4>
+            <div class="table-responsive">
+                <table id="bootstrapdatatable" class="table table-striped table-bordered" width="100%">
+                    <thead>
+                        <th>#</th>
+                        <th>Код</th>
+                        <th>Кат. номер</th>
+                        <th>Наименование</th>
+                        <th>Цена</th>
+                        <th>Кол-во</th>
+                        <th>Изм</th>
+                    </thead>
+                    <tbody>
+                        {% for product in products %}
+                            <tr>
+                                <td>{{product.id}}</td>
+                                <td>{{product.number}}</td>
+                                <td>{{product.catalog_number}}</td>
+                                <td>{{product.title}}</td>
+                                <td>{{product.price}}</td>
+                                <td>{{product.ostatok}}</td>
+                                <td>{{product.edizm}}</td>
+                            </tr>  
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+    
+{% endblock content %}

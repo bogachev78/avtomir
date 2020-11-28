@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+  {{article.title}}
+{% endblock title %}
+{% block content %}
+
+  <div class="site-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 blog-content">
+            <h2>{{article.title}}</h2>
+            <div>{% autoescape off %}{{article.body}}{% endautoescape %}</div>
+            <p class="date">{{article.created}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}

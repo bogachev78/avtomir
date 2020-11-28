@@ -1,0 +1,37 @@
+.ftco-cover-1, .ftco-cover-1 .container > .row {
+    height: 45vh;
+    min-height: 300px;
+}
+.images img{
+    width: 20% !important; 
+}
+.copyright{
+    margin: 0 auto;    
+}
+.block__35630{
+    height: 300px;
+}
+.date{
+    font-size: 13px;
+    font-style: italic;
+}
+div.bg-white.p-3.p-md-5{
+    height: 350px;
+}
+.card{
+    min-height: 470px;
+    position: relative;
+}
+.card img{
+    width: 286px;
+    height: 200px;
+}
+.btn.btn-outline-primary{
+    position: absolute;
+    bottom: 10px;
+    left: 90px;
+}
+#orange{
+    border: 1px solid #ff8b00;
+    border-radius: 5px;
+}
